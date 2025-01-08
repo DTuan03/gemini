@@ -10,7 +10,7 @@ import { useModelSelector } from './hooks'
 
 function Header() {
     // const { name } = useSelector((state: RootState) => state.user) // Sửa tên
-    const name = "Tuấn"
+    const name = ""
     const { selectedModel, handleSelectModel } = useModelSelector()
 
     const dispatch = useDispatch()
@@ -21,7 +21,7 @@ function Header() {
 
     return (
         <div className='header'>
-            <span>Hello, {name}</span>
+            <span>Hello{name}</span>
             <div className='header-buttons'>
                 <select
                     className='model-select-input'
